@@ -1,0 +1,91 @@
+global:
+  name: seqclr-pretrain-vision-model
+  phase: train
+  stage: pretrain-vision
+  workdir: workdir
+  seed: 42
+
+dataset:
+  charset_path: data/alphabet_ch_list.txt
+  scheme: selfsupervised
+  type: ST
+  train: {
+    roots: [
+        'data/0.7_train_images',
+        'data/0.3_unlabel_train_images',
+    ],
+    weights: [ 0.7, 0.3 ],
+    batch_size: 32,
+  }
+  valid: {
+    roots: [
+        'F:\zcy\research\code\pythonProject1\ABINet-main\data\evaluation\test_LMDB',
+    ],
+    batch_size: 32
+  }
+#  test: {
+#    roots: [
+#        'data/evaluation/benchmark',
+#        'data/evaluation/addition',
+#    ],
+#    batch_size: 304
+#  }
+  max_length: 25
+  image_height: 32
+  image_width: 128
+  data_aug: True
+  multiscales: True
+  num_workers: 0
+  augmentation_severity: 1
+  pin_memory: True
+  smooth_label: False
+  smooth_factor: 0.1
+  one_hot_y: True
+  use_sm: False
+  filter_single_punctuation: False
+
+training:
+  epochs: 25
+  show_iters: 40
+  eval_iters: 40
+  save_iters: 40
+  start_iters: 0
+  stats_iters: 40
+  hist_iters: 40
+
+optimizer:
+  type: Adam
+  true_wd: False
+  wd: 0.0001
+  bn_wd: False
+  clip_grad: 20
+  lr: 0.0001
+  scheduler: {
+    periods: [ 17, 5, 3 ],
+    gamma: 0.1,
+  }
+
+model:
+  name: 'semimtr.modules.model_seqclr_vision.SeqCLRModel'
+  checkpoint: ~
+  vision: {
+    loss_weight: 1.,
+    attention: 'position',
+    backbone: 'transformer',
+    backbone_ln: 3,
+  }
+  proj: {
+    layer: backbone_feature,  # 'feature'|'backbone_feature'
+    scheme: null,  # null|'bilstm'|'linear_per_column'
+    # hidden: 256,
+    # output: 256,
+  }
+  contrastive: {
+    loss_weight: 1.,
+    supervised_flag: True,
+  }
+  instance_mapping: {
+    frame_to_instance: False,
+    fixed: instances,  # instances|frames
+    w: 5,
+  }

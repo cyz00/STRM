@@ -1,0 +1,988 @@
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_test_batch_size = 128
+	(18): dataset_test_roots = ['data/evaluation/benchmark', 'data/evaluation/addition']
+	(19): dataset_train_batch_size = 32
+	(20): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(21): dataset_train_weights = [0.7, 0.3]
+	(22): dataset_type = ST
+	(23): dataset_use_sm = False
+	(24): dataset_valid_batch_size = 32
+	(25): dataset_valid_roots = ['C:\\Users\\tianlei\\Desktop\\M$^3$ANet\\data\\test_LMDB']
+	(26): global_debug = False
+	(27): global_name = seqclr-pretrain-vision-model
+	(28): global_phase = train
+	(29): global_seed = 42
+	(30): global_stage = pretrain-vision
+	(31): global_workdir = workdir\seqclr-pretrain-vision-model
+	(32): model_checkpoint = None
+	(33): model_contrastive_loss_weight = 1.0
+	(34): model_contrastive_supervised_flag = True
+	(35): model_instance_mapping_fixed = instances
+	(36): model_instance_mapping_frame_to_instance = False
+	(37): model_instance_mapping_w = 5
+	(38): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(39): model_proj_layer = backbone_feature
+	(40): model_proj_scheme = None
+	(41): model_strict = True
+	(42): model_vision_attention = position
+	(43): model_vision_backbone = transformer
+	(44): model_vision_backbone_ln = 3
+	(45): model_vision_loss_weight = 1.0
+	(46): optimizer_bn_wd = False
+	(47): optimizer_clip_grad = 20
+	(48): optimizer_lr = 0.0001
+	(49): optimizer_scheduler_gamma = 0.1
+	(50): optimizer_scheduler_periods = [17, 5, 3]
+	(51): optimizer_true_wd = False
+	(52): optimizer_type = Adam
+	(53): optimizer_wd = 0.0001
+	(54): training_epochs = 25
+	(55): training_eval_iters = 40
+	(56): training_hist_iters = 40
+	(57): training_save_iters = 40
+	(58): training_show_iters = 40
+	(59): training_start_iters = 0
+	(60): training_stats_iters = 40
+)
+Construct dataset.
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_test_batch_size = 128
+	(18): dataset_test_roots = ['data/evaluation/benchmark', 'data/evaluation/addition']
+	(19): dataset_train_batch_size = 32
+	(20): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(21): dataset_train_weights = [0.7, 0.3]
+	(22): dataset_type = ST
+	(23): dataset_use_sm = False
+	(24): dataset_valid_batch_size = 32
+	(25): dataset_valid_roots = ['F:\\zcy\\research\\code\\pythonProject1\\ABINet-main\\data\\evaluation\\test_LMDB']
+	(26): global_debug = False
+	(27): global_name = seqclr-pretrain-vision-model
+	(28): global_phase = train
+	(29): global_seed = 42
+	(30): global_stage = pretrain-vision
+	(31): global_workdir = workdir\seqclr-pretrain-vision-model
+	(32): model_checkpoint = None
+	(33): model_contrastive_loss_weight = 1.0
+	(34): model_contrastive_supervised_flag = True
+	(35): model_instance_mapping_fixed = instances
+	(36): model_instance_mapping_frame_to_instance = False
+	(37): model_instance_mapping_w = 5
+	(38): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(39): model_proj_layer = backbone_feature
+	(40): model_proj_scheme = None
+	(41): model_strict = True
+	(42): model_vision_attention = position
+	(43): model_vision_backbone = transformer
+	(44): model_vision_backbone_ln = 3
+	(45): model_vision_loss_weight = 1.0
+	(46): optimizer_bn_wd = False
+	(47): optimizer_clip_grad = 20
+	(48): optimizer_lr = 0.0001
+	(49): optimizer_scheduler_gamma = 0.1
+	(50): optimizer_scheduler_periods = [17, 5, 3]
+	(51): optimizer_true_wd = False
+	(52): optimizer_type = Adam
+	(53): optimizer_wd = 0.0001
+	(54): training_epochs = 25
+	(55): training_eval_iters = 40
+	(56): training_hist_iters = 40
+	(57): training_save_iters = 40
+	(58): training_show_iters = 40
+	(59): training_start_iters = 0
+	(60): training_stats_iters = 40
+)
+Construct dataset.
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_test_batch_size = 128
+	(18): dataset_test_roots = ['data/evaluation/benchmark', 'data/evaluation/addition']
+	(19): dataset_train_batch_size = 32
+	(20): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(21): dataset_train_weights = [0.7, 0.3]
+	(22): dataset_type = ST
+	(23): dataset_use_sm = False
+	(24): dataset_valid_batch_size = 32
+	(25): dataset_valid_roots = ['F:\\zcy\\research\\code\\pythonProject1\\ABINet-main\\data\\evaluation\\test_LMDB']
+	(26): global_debug = False
+	(27): global_name = seqclr-pretrain-vision-model
+	(28): global_phase = train
+	(29): global_seed = 42
+	(30): global_stage = pretrain-vision
+	(31): global_workdir = workdir\seqclr-pretrain-vision-model
+	(32): model_checkpoint = None
+	(33): model_contrastive_loss_weight = 1.0
+	(34): model_contrastive_supervised_flag = True
+	(35): model_instance_mapping_fixed = instances
+	(36): model_instance_mapping_frame_to_instance = False
+	(37): model_instance_mapping_w = 5
+	(38): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(39): model_proj_layer = backbone_feature
+	(40): model_proj_scheme = None
+	(41): model_strict = True
+	(42): model_vision_attention = position
+	(43): model_vision_backbone = transformer
+	(44): model_vision_backbone_ln = 3
+	(45): model_vision_loss_weight = 1.0
+	(46): optimizer_bn_wd = False
+	(47): optimizer_clip_grad = 20
+	(48): optimizer_lr = 0.0001
+	(49): optimizer_scheduler_gamma = 0.1
+	(50): optimizer_scheduler_periods = [17, 5, 3]
+	(51): optimizer_true_wd = False
+	(52): optimizer_type = Adam
+	(53): optimizer_wd = 0.0001
+	(54): training_epochs = 25
+	(55): training_eval_iters = 40
+	(56): training_hist_iters = 40
+	(57): training_save_iters = 40
+	(58): training_show_iters = 40
+	(59): training_start_iters = 0
+	(60): training_stats_iters = 40
+)
+Construct dataset.
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_train_batch_size = 32
+	(18): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(19): dataset_train_weights = [0.7, 0.3]
+	(20): dataset_type = ST
+	(21): dataset_use_sm = False
+	(22): dataset_valid_batch_size = 32
+	(23): dataset_valid_roots = ['F:\\zcy\\research\\code\\pythonProject1\\ABINet-main\\data\\evaluation\\test_LMDB']
+	(24): global_debug = False
+	(25): global_name = seqclr-pretrain-vision-model
+	(26): global_phase = train
+	(27): global_seed = 42
+	(28): global_stage = pretrain-vision
+	(29): global_workdir = workdir\seqclr-pretrain-vision-model
+	(30): model_checkpoint = None
+	(31): model_contrastive_loss_weight = 1.0
+	(32): model_contrastive_supervised_flag = True
+	(33): model_instance_mapping_fixed = instances
+	(34): model_instance_mapping_frame_to_instance = False
+	(35): model_instance_mapping_w = 5
+	(36): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(37): model_proj_layer = backbone_feature
+	(38): model_proj_scheme = None
+	(39): model_strict = True
+	(40): model_vision_attention = position
+	(41): model_vision_backbone = transformer
+	(42): model_vision_backbone_ln = 3
+	(43): model_vision_loss_weight = 1.0
+	(44): optimizer_bn_wd = False
+	(45): optimizer_clip_grad = 20
+	(46): optimizer_lr = 0.0001
+	(47): optimizer_scheduler_gamma = 0.1
+	(48): optimizer_scheduler_periods = [17, 5, 3]
+	(49): optimizer_true_wd = False
+	(50): optimizer_type = Adam
+	(51): optimizer_wd = 0.0001
+	(52): training_epochs = 25
+	(53): training_eval_iters = 40
+	(54): training_hist_iters = 40
+	(55): training_save_iters = 40
+	(56): training_show_iters = 40
+	(57): training_start_iters = 0
+	(58): training_stats_iters = 40
+)
+Construct dataset.
+5131 training items found.
+1791 valid items found.
+Construct model.
+Construct learner.
+Start training.
+Corrupted image is found: 0.3_unlabel_train_images, 1324
+Corrupted image is found: 0.3_unlabel_train_images, 1385
+Corrupted image is found: 0.3_unlabel_train_images, 1516
+Corrupted image is found: 0.3_unlabel_train_images, 1116
+Corrupted image is found: 0.3_unlabel_train_images, 178
+Corrupted image is found: 0.3_unlabel_train_images, 1209
+Corrupted image is found: 0.3_unlabel_train_images, 864
+Corrupted image is found: 0.3_unlabel_train_images, 65
+Corrupted image is found: 0.3_unlabel_train_images, 61
+Corrupted image is found: 0.3_unlabel_train_images, 191
+Corrupted image is found: 0.3_unlabel_train_images, 447
+Corrupted image is found: 0.3_unlabel_train_images, 476
+Corrupted image is found: 0.3_unlabel_train_images, 1034
+Corrupted image is found: 0.3_unlabel_train_images, 1232
+Corrupted image is found: 0.3_unlabel_train_images, 54
+Corrupted image is found: 0.3_unlabel_train_images, 1149
+Corrupted image is found: 0.3_unlabel_train_images, 407
+Corrupted image is found: 0.3_unlabel_train_images, 1466
+Corrupted image is found: 0.3_unlabel_train_images, 1330
+Corrupted image is found: 0.3_unlabel_train_images, 1436
+Corrupted image is found: 0.3_unlabel_train_images, 1116
+Corrupted image is found: 0.3_unlabel_train_images, 859
+Corrupted image is found: 0.3_unlabel_train_images, 451
+Corrupted image is found: 0.3_unlabel_train_images, 919
+Corrupted image is found: 0.3_unlabel_train_images, 1206
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 13
+Corrupted image is found: 0.3_unlabel_train_images, 326
+Corrupted image is found: 0.3_unlabel_train_images, 1429
+Corrupted image is found: 0.3_unlabel_train_images, 865
+Corrupted image is found: 0.3_unlabel_train_images, 696
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 318
+Corrupted image is found: 0.3_unlabel_train_images, 440
+Corrupted image is found: 0.3_unlabel_train_images, 689
+Corrupted image is found: 0.3_unlabel_train_images, 209
+Corrupted image is found: 0.3_unlabel_train_images, 189
+Corrupted image is found: 0.3_unlabel_train_images, 778
+Corrupted image is found: 0.3_unlabel_train_images, 198
+Corrupted image is found: 0.3_unlabel_train_images, 735
+Corrupted image is found: 0.3_unlabel_train_images, 704
+Corrupted image is found: 0.3_unlabel_train_images, 1236
+Corrupted image is found: 0.3_unlabel_train_images, 541
+Corrupted image is found: 0.3_unlabel_train_images, 88
+Corrupted image is found: 0.3_unlabel_train_images, 1494
+Corrupted image is found: 0.3_unlabel_train_images, 940
+Corrupted image is found: 0.3_unlabel_train_images, 1098
+Corrupted image is found: 0.3_unlabel_train_images, 255
+Corrupted image is found: 0.3_unlabel_train_images, 775
+Corrupted image is found: 0.3_unlabel_train_images, 161
+Corrupted image is found: 0.3_unlabel_train_images, 1130
+Corrupted image is found: 0.3_unlabel_train_images, 600
+Corrupted image is found: 0.3_unlabel_train_images, 1287
+Corrupted image is found: 0.3_unlabel_train_images, 1266
+Corrupted image is found: 0.3_unlabel_train_images, 740
+Corrupted image is found: 0.3_unlabel_train_images, 1182
+Corrupted image is found: 0.3_unlabel_train_images, 393
+Corrupted image is found: 0.3_unlabel_train_images, 1442
+Corrupted image is found: 0.3_unlabel_train_images, 142
+Corrupted image is found: 0.3_unlabel_train_images, 93
+Corrupted image is found: 0.3_unlabel_train_images, 1354
+Corrupted image is found: 0.3_unlabel_train_images, 466
+Corrupted image is found: 0.3_unlabel_train_images, 592
+Corrupted image is found: 0.3_unlabel_train_images, 163
+Corrupted image is found: 0.3_unlabel_train_images, 476
+Corrupted image is found: 0.3_unlabel_train_images, 206
+Corrupted image is found: 0.3_unlabel_train_images, 778
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 928
+Corrupted image is found: 0.3_unlabel_train_images, 1301
+Corrupted image is found: 0.3_unlabel_train_images, 747
+Corrupted image is found: 0.3_unlabel_train_images, 333
+Corrupted image is found: 0.3_unlabel_train_images, 758
+Corrupted image is found: 0.3_unlabel_train_images, 727
+Corrupted image is found: 0.3_unlabel_train_images, 429
+Corrupted image is found: 0.3_unlabel_train_images, 1372
+Corrupted image is found: 0.3_unlabel_train_images, 546
+Corrupted image is found: 0.3_unlabel_train_images, 1437
+Corrupted image is found: 0.3_unlabel_train_images, 1399
+Corrupted image is found: 0.3_unlabel_train_images, 1327
+Corrupted image is found: 0.3_unlabel_train_images, 146
+Corrupted image is found: 0.3_unlabel_train_images, 1247
+Corrupted image is found: 0.3_unlabel_train_images, 1300
+Corrupted image is found: 0.3_unlabel_train_images, 350
+Corrupted image is found: 0.3_unlabel_train_images, 1093
+Corrupted image is found: 0.3_unlabel_train_images, 1493
+Corrupted image is found: 0.3_unlabel_train_images, 501
+Corrupted image is found: 0.3_unlabel_train_images, 334
+Corrupted image is found: 0.3_unlabel_train_images, 946
+Corrupted image is found: 0.3_unlabel_train_images, 777
+Corrupted image is found: 0.3_unlabel_train_images, 552
+Corrupted image is found: 0.3_unlabel_train_images, 1310
+Corrupted image is found: 0.3_unlabel_train_images, 1409
+Corrupted image is found: 0.3_unlabel_train_images, 1140
+Corrupted image is found: 0.3_unlabel_train_images, 449
+Corrupted image is found: 0.3_unlabel_train_images, 1402
+Corrupted image is found: 0.3_unlabel_train_images, 664
+Corrupted image is found: 0.3_unlabel_train_images, 114
+Corrupted image is found: 0.3_unlabel_train_images, 469
+Corrupted image is found: 0.3_unlabel_train_images, 65
+Corrupted image is found: 0.3_unlabel_train_images, 646
+Corrupted image is found: 0.3_unlabel_train_images, 821
+Corrupted image is found: 0.3_unlabel_train_images, 548
+Corrupted image is found: 0.3_unlabel_train_images, 135
+Corrupted image is found: 0.3_unlabel_train_images, 432
+Corrupted image is found: 0.3_unlabel_train_images, 1161
+Corrupted image is found: 0.3_unlabel_train_images, 1470
+Corrupted image is found: 0.3_unlabel_train_images, 644
+Corrupted image is found: 0.3_unlabel_train_images, 435
+Corrupted image is found: 0.3_unlabel_train_images, 1342
+Corrupted image is found: 0.3_unlabel_train_images, 1022
+Corrupted image is found: 0.3_unlabel_train_images, 810
+Corrupted image is found: 0.3_unlabel_train_images, 1316
+Corrupted image is found: 0.3_unlabel_train_images, 939
+Corrupted image is found: 0.3_unlabel_train_images, 292
+Corrupted image is found: 0.3_unlabel_train_images, 542
+Corrupted image is found: 0.3_unlabel_train_images, 285
+Corrupted image is found: 0.3_unlabel_train_images, 505
+Corrupted image is found: 0.3_unlabel_train_images, 1525
+Corrupted image is found: 0.3_unlabel_train_images, 1149
+Corrupted image is found: 0.3_unlabel_train_images, 1103
+Corrupted image is found: 0.3_unlabel_train_images, 538
+Corrupted image is found: 0.3_unlabel_train_images, 1529
+Corrupted image is found: 0.3_unlabel_train_images, 1197
+Corrupted image is found: 0.3_unlabel_train_images, 877
+Corrupted image is found: 0.3_unlabel_train_images, 1195
+Corrupted image is found: 0.3_unlabel_train_images, 817
+Corrupted image is found: 0.3_unlabel_train_images, 741
+Corrupted image is found: 0.3_unlabel_train_images, 449
+Corrupted image is found: 0.3_unlabel_train_images, 283
+Corrupted image is found: 0.3_unlabel_train_images, 1043
+Corrupted image is found: 0.3_unlabel_train_images, 1010
+Corrupted image is found: 0.3_unlabel_train_images, 186
+Corrupted image is found: 0.3_unlabel_train_images, 96
+Corrupted image is found: 0.3_unlabel_train_images, 224
+Corrupted image is found: 0.3_unlabel_train_images, 313
+Corrupted image is found: 0.3_unlabel_train_images, 1285
+Corrupted image is found: 0.3_unlabel_train_images, 327
+Corrupted image is found: 0.3_unlabel_train_images, 1393
+Corrupted image is found: 0.3_unlabel_train_images, 864
+Corrupted image is found: 0.3_unlabel_train_images, 1221
+Corrupted image is found: 0.3_unlabel_train_images, 130
+Corrupted image is found: 0.3_unlabel_train_images, 788
+Corrupted image is found: 0.3_unlabel_train_images, 781
+Corrupted image is found: 0.3_unlabel_train_images, 1220
+Corrupted image is found: 0.3_unlabel_train_images, 958
+Corrupted image is found: 0.3_unlabel_train_images, 1083
+Corrupted image is found: 0.3_unlabel_train_images, 514
+Corrupted image is found: 0.3_unlabel_train_images, 1133
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_train_batch_size = 32
+	(18): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(19): dataset_train_weights = [0.7, 0.3]
+	(20): dataset_type = ST
+	(21): dataset_use_sm = False
+	(22): dataset_valid_batch_size = 32
+	(23): dataset_valid_roots = ['F:\\zcy\\research\\code\\pythonProject1\\ABINet-main\\data\\evaluation\\test_LMDB']
+	(24): global_debug = False
+	(25): global_name = seqclr-pretrain-vision-model
+	(26): global_phase = train
+	(27): global_seed = 42
+	(28): global_stage = pretrain-vision
+	(29): global_workdir = workdir\seqclr-pretrain-vision-model
+	(30): model_checkpoint = None
+	(31): model_contrastive_loss_weight = 1.0
+	(32): model_contrastive_supervised_flag = True
+	(33): model_instance_mapping_fixed = instances
+	(34): model_instance_mapping_frame_to_instance = False
+	(35): model_instance_mapping_w = 5
+	(36): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(37): model_proj_layer = backbone_feature
+	(38): model_proj_scheme = None
+	(39): model_strict = True
+	(40): model_vision_attention = position
+	(41): model_vision_backbone = transformer
+	(42): model_vision_backbone_ln = 3
+	(43): model_vision_loss_weight = 1.0
+	(44): optimizer_bn_wd = False
+	(45): optimizer_clip_grad = 20
+	(46): optimizer_lr = 0.0001
+	(47): optimizer_scheduler_gamma = 0.1
+	(48): optimizer_scheduler_periods = [17, 5, 3]
+	(49): optimizer_true_wd = False
+	(50): optimizer_type = Adam
+	(51): optimizer_wd = 0.0001
+	(52): training_epochs = 25
+	(53): training_eval_iters = 40
+	(54): training_hist_iters = 40
+	(55): training_save_iters = 40
+	(56): training_show_iters = 40
+	(57): training_start_iters = 0
+	(58): training_stats_iters = 40
+)
+Construct dataset.
+5131 training items found.
+1791 valid items found.
+Construct model.
+Construct learner.
+Start training.
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_train_batch_size = 32
+	(18): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(19): dataset_train_weights = [0.7, 0.3]
+	(20): dataset_type = ST
+	(21): dataset_use_sm = False
+	(22): dataset_valid_batch_size = 32
+	(23): dataset_valid_roots = ['F:\\zcy\\research\\code\\pythonProject1\\ABINet-main\\data\\evaluation\\test_LMDB']
+	(24): global_debug = False
+	(25): global_name = seqclr-pretrain-vision-model
+	(26): global_phase = train
+	(27): global_seed = 42
+	(28): global_stage = pretrain-vision
+	(29): global_workdir = workdir\seqclr-pretrain-vision-model
+	(30): model_checkpoint = None
+	(31): model_contrastive_loss_weight = 1.0
+	(32): model_contrastive_supervised_flag = True
+	(33): model_instance_mapping_fixed = instances
+	(34): model_instance_mapping_frame_to_instance = False
+	(35): model_instance_mapping_w = 5
+	(36): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(37): model_proj_layer = backbone_feature
+	(38): model_proj_scheme = None
+	(39): model_strict = True
+	(40): model_vision_attention = position
+	(41): model_vision_backbone = transformer
+	(42): model_vision_backbone_ln = 3
+	(43): model_vision_loss_weight = 1.0
+	(44): optimizer_bn_wd = False
+	(45): optimizer_clip_grad = 20
+	(46): optimizer_lr = 0.0001
+	(47): optimizer_scheduler_gamma = 0.1
+	(48): optimizer_scheduler_periods = [17, 5, 3]
+	(49): optimizer_true_wd = False
+	(50): optimizer_type = Adam
+	(51): optimizer_wd = 0.0001
+	(52): training_epochs = 25
+	(53): training_eval_iters = 40
+	(54): training_hist_iters = 40
+	(55): training_save_iters = 40
+	(56): training_show_iters = 40
+	(57): training_start_iters = 0
+	(58): training_stats_iters = 40
+)
+Construct dataset.
+5131 training items found.
+1791 valid items found.
+Construct model.
+Construct learner.
+Start training.
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_train_batch_size = 32
+	(18): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(19): dataset_train_weights = [0.7, 0.3]
+	(20): dataset_type = ST
+	(21): dataset_use_sm = False
+	(22): dataset_valid_batch_size = 32
+	(23): dataset_valid_roots = ['F:\\zcy\\research\\code\\pythonProject1\\ABINet-main\\data\\evaluation\\test_LMDB']
+	(24): global_debug = False
+	(25): global_name = seqclr-pretrain-vision-model
+	(26): global_phase = train
+	(27): global_seed = 42
+	(28): global_stage = pretrain-vision
+	(29): global_workdir = workdir\seqclr-pretrain-vision-model
+	(30): model_checkpoint = None
+	(31): model_contrastive_loss_weight = 1.0
+	(32): model_contrastive_supervised_flag = True
+	(33): model_instance_mapping_fixed = instances
+	(34): model_instance_mapping_frame_to_instance = False
+	(35): model_instance_mapping_w = 5
+	(36): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(37): model_proj_layer = backbone_feature
+	(38): model_proj_scheme = None
+	(39): model_strict = True
+	(40): model_vision_attention = position
+	(41): model_vision_backbone = transformer
+	(42): model_vision_backbone_ln = 3
+	(43): model_vision_loss_weight = 1.0
+	(44): optimizer_bn_wd = False
+	(45): optimizer_clip_grad = 20
+	(46): optimizer_lr = 0.0001
+	(47): optimizer_scheduler_gamma = 0.1
+	(48): optimizer_scheduler_periods = [17, 5, 3]
+	(49): optimizer_true_wd = False
+	(50): optimizer_type = Adam
+	(51): optimizer_wd = 0.0001
+	(52): training_epochs = 25
+	(53): training_eval_iters = 40
+	(54): training_hist_iters = 40
+	(55): training_save_iters = 40
+	(56): training_show_iters = 40
+	(57): training_start_iters = 0
+	(58): training_stats_iters = 40
+)
+Construct dataset.
+5131 training items found.
+1791 valid items found.
+Construct model.
+Construct learner.
+Start training.
+Corrupted image is found: 0.3_unlabel_train_images, 1324
+Corrupted image is found: 0.3_unlabel_train_images, 1330
+Corrupted image is found: 0.3_unlabel_train_images, 1436
+Corrupted image is found: 0.3_unlabel_train_images, 1116
+Corrupted image is found: 0.3_unlabel_train_images, 859
+Corrupted image is found: 0.3_unlabel_train_images, 451
+Corrupted image is found: 0.3_unlabel_train_images, 919
+Corrupted image is found: 0.3_unlabel_train_images, 1206
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 13
+Corrupted image is found: 0.3_unlabel_train_images, 326
+Corrupted image is found: 0.3_unlabel_train_images, 1429
+Corrupted image is found: 0.3_unlabel_train_images, 865
+Corrupted image is found: 0.3_unlabel_train_images, 696
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 318
+Corrupted image is found: 0.3_unlabel_train_images, 440
+Corrupted image is found: 0.3_unlabel_train_images, 689
+Corrupted image is found: 0.3_unlabel_train_images, 209
+Corrupted image is found: 0.3_unlabel_train_images, 189
+Corrupted image is found: 0.3_unlabel_train_images, 778
+Corrupted image is found: 0.3_unlabel_train_images, 198
+Corrupted image is found: 0.3_unlabel_train_images, 735
+Corrupted image is found: 0.3_unlabel_train_images, 704
+Corrupted image is found: 0.3_unlabel_train_images, 1236
+Corrupted image is found: 0.3_unlabel_train_images, 541
+Corrupted image is found: 0.3_unlabel_train_images, 88
+Corrupted image is found: 0.3_unlabel_train_images, 1494
+Corrupted image is found: 0.3_unlabel_train_images, 940
+Corrupted image is found: 0.3_unlabel_train_images, 1098
+Corrupted image is found: 0.3_unlabel_train_images, 255
+Corrupted image is found: 0.3_unlabel_train_images, 775
+Corrupted image is found: 0.3_unlabel_train_images, 161
+Corrupted image is found: 0.3_unlabel_train_images, 1130
+Corrupted image is found: 0.3_unlabel_train_images, 600
+Corrupted image is found: 0.3_unlabel_train_images, 1287
+Corrupted image is found: 0.3_unlabel_train_images, 1266
+Corrupted image is found: 0.3_unlabel_train_images, 740
+Corrupted image is found: 0.3_unlabel_train_images, 1182
+Corrupted image is found: 0.3_unlabel_train_images, 393
+Corrupted image is found: 0.3_unlabel_train_images, 1442
+Corrupted image is found: 0.3_unlabel_train_images, 142
+Corrupted image is found: 0.3_unlabel_train_images, 93
+Corrupted image is found: 0.3_unlabel_train_images, 1354
+Corrupted image is found: 0.3_unlabel_train_images, 466
+Corrupted image is found: 0.3_unlabel_train_images, 592
+Corrupted image is found: 0.3_unlabel_train_images, 163
+Corrupted image is found: 0.3_unlabel_train_images, 476
+Corrupted image is found: 0.3_unlabel_train_images, 206
+Corrupted image is found: 0.3_unlabel_train_images, 778
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 928
+Corrupted image is found: 0.3_unlabel_train_images, 1301
+Corrupted image is found: 0.3_unlabel_train_images, 747
+Corrupted image is found: 0.3_unlabel_train_images, 333
+Corrupted image is found: 0.3_unlabel_train_images, 758
+Corrupted image is found: 0.3_unlabel_train_images, 727
+Corrupted image is found: 0.3_unlabel_train_images, 429
+Corrupted image is found: 0.3_unlabel_train_images, 1372
+Corrupted image is found: 0.3_unlabel_train_images, 546
+Corrupted image is found: 0.3_unlabel_train_images, 1437
+Corrupted image is found: 0.3_unlabel_train_images, 1399
+Corrupted image is found: 0.3_unlabel_train_images, 1327
+Corrupted image is found: 0.3_unlabel_train_images, 146
+Corrupted image is found: 0.3_unlabel_train_images, 1247
+Corrupted image is found: 0.3_unlabel_train_images, 1300
+Corrupted image is found: 0.3_unlabel_train_images, 350
+Corrupted image is found: 0.3_unlabel_train_images, 1093
+Corrupted image is found: 0.3_unlabel_train_images, 1493
+Corrupted image is found: 0.3_unlabel_train_images, 501
+Corrupted image is found: 0.3_unlabel_train_images, 334
+Corrupted image is found: 0.3_unlabel_train_images, 946
+Corrupted image is found: 0.3_unlabel_train_images, 777
+Corrupted image is found: 0.3_unlabel_train_images, 552
+Corrupted image is found: 0.3_unlabel_train_images, 1310
+Corrupted image is found: 0.3_unlabel_train_images, 1409
+Corrupted image is found: 0.3_unlabel_train_images, 1140
+Corrupted image is found: 0.3_unlabel_train_images, 449
+Corrupted image is found: 0.3_unlabel_train_images, 1402
+Corrupted image is found: 0.3_unlabel_train_images, 664
+Corrupted image is found: 0.3_unlabel_train_images, 114
+Corrupted image is found: 0.3_unlabel_train_images, 469
+Corrupted image is found: 0.3_unlabel_train_images, 65
+Corrupted image is found: 0.3_unlabel_train_images, 646
+Corrupted image is found: 0.3_unlabel_train_images, 821
+Corrupted image is found: 0.3_unlabel_train_images, 548
+Corrupted image is found: 0.3_unlabel_train_images, 135
+Corrupted image is found: 0.3_unlabel_train_images, 432
+Corrupted image is found: 0.3_unlabel_train_images, 1161
+Corrupted image is found: 0.3_unlabel_train_images, 1470
+Corrupted image is found: 0.3_unlabel_train_images, 644
+Corrupted image is found: 0.3_unlabel_train_images, 435
+Corrupted image is found: 0.3_unlabel_train_images, 1342
+Corrupted image is found: 0.3_unlabel_train_images, 1022
+Corrupted image is found: 0.3_unlabel_train_images, 810
+Corrupted image is found: 0.3_unlabel_train_images, 1316
+Corrupted image is found: 0.3_unlabel_train_images, 939
+Corrupted image is found: 0.3_unlabel_train_images, 292
+Corrupted image is found: 0.3_unlabel_train_images, 542
+Corrupted image is found: 0.3_unlabel_train_images, 285
+Corrupted image is found: 0.3_unlabel_train_images, 505
+Corrupted image is found: 0.3_unlabel_train_images, 1525
+Corrupted image is found: 0.3_unlabel_train_images, 1149
+Corrupted image is found: 0.3_unlabel_train_images, 1103
+Corrupted image is found: 0.3_unlabel_train_images, 538
+Corrupted image is found: 0.3_unlabel_train_images, 1529
+Corrupted image is found: 0.3_unlabel_train_images, 1197
+Corrupted image is found: 0.3_unlabel_train_images, 877
+Corrupted image is found: 0.3_unlabel_train_images, 1195
+Corrupted image is found: 0.3_unlabel_train_images, 817
+Corrupted image is found: 0.3_unlabel_train_images, 741
+Corrupted image is found: 0.3_unlabel_train_images, 449
+Corrupted image is found: 0.3_unlabel_train_images, 283
+Corrupted image is found: 0.3_unlabel_train_images, 1043
+Corrupted image is found: 0.3_unlabel_train_images, 1010
+Corrupted image is found: 0.3_unlabel_train_images, 186
+Corrupted image is found: 0.3_unlabel_train_images, 96
+Corrupted image is found: 0.3_unlabel_train_images, 224
+Corrupted image is found: 0.3_unlabel_train_images, 313
+Corrupted image is found: 0.3_unlabel_train_images, 1285
+Corrupted image is found: 0.3_unlabel_train_images, 327
+Corrupted image is found: 0.3_unlabel_train_images, 1393
+Corrupted image is found: 0.3_unlabel_train_images, 864
+Corrupted image is found: 0.3_unlabel_train_images, 1221
+Corrupted image is found: 0.3_unlabel_train_images, 130
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_train_batch_size = 32
+	(18): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(19): dataset_train_weights = [0.7, 0.3]
+	(20): dataset_type = ST
+	(21): dataset_use_sm = False
+	(22): dataset_valid_batch_size = 32
+	(23): dataset_valid_roots = ['F:\\zcy\\research\\code\\pythonProject1\\ABINet-main\\data\\evaluation\\test_LMDB']
+	(24): global_debug = False
+	(25): global_name = seqclr-pretrain-vision-model
+	(26): global_phase = train
+	(27): global_seed = 42
+	(28): global_stage = pretrain-vision
+	(29): global_workdir = workdir\seqclr-pretrain-vision-model
+	(30): model_checkpoint = None
+	(31): model_contrastive_loss_weight = 1.0
+	(32): model_contrastive_supervised_flag = True
+	(33): model_instance_mapping_fixed = instances
+	(34): model_instance_mapping_frame_to_instance = False
+	(35): model_instance_mapping_w = 5
+	(36): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(37): model_proj_layer = backbone_feature
+	(38): model_proj_scheme = None
+	(39): model_strict = True
+	(40): model_vision_attention = position
+	(41): model_vision_backbone = transformer
+	(42): model_vision_backbone_ln = 3
+	(43): model_vision_loss_weight = 1.0
+	(44): optimizer_bn_wd = False
+	(45): optimizer_clip_grad = 20
+	(46): optimizer_lr = 0.0001
+	(47): optimizer_scheduler_gamma = 0.1
+	(48): optimizer_scheduler_periods = [17, 5, 3]
+	(49): optimizer_true_wd = False
+	(50): optimizer_type = Adam
+	(51): optimizer_wd = 0.0001
+	(52): training_epochs = 25
+	(53): training_eval_iters = 40
+	(54): training_hist_iters = 40
+	(55): training_save_iters = 40
+	(56): training_show_iters = 40
+	(57): training_start_iters = 0
+	(58): training_stats_iters = 40
+)
+Construct dataset.
+5131 training items found.
+1791 valid items found.
+Construct model.
+Construct learner.
+Start training.
+You have chosen to seed training. This will slow down your training!
+ModelConfig(
+	(0): dataset_augmentation_severity = 1
+	(1): dataset_case_sensitive = False
+	(2): dataset_charset_path = data/alphabet_ch_list.txt
+	(3): dataset_data_aug = True
+	(4): dataset_eval_case_sensitive = False
+	(5): dataset_filter_single_punctuation = False
+	(6): dataset_image_height = 32
+	(7): dataset_image_width = 128
+	(8): dataset_max_length = 25
+	(9): dataset_multiscales = True
+	(10): dataset_num_workers = 0
+	(11): dataset_one_hot_y = True
+	(12): dataset_pin_memory = True
+	(13): dataset_portion = 1.0
+	(14): dataset_scheme = selfsupervised
+	(15): dataset_smooth_factor = 0.1
+	(16): dataset_smooth_label = False
+	(17): dataset_train_batch_size = 32
+	(18): dataset_train_roots = ['data/0.7_train_images', 'data/0.3_unlabel_train_images']
+	(19): dataset_train_weights = [0.7, 0.3]
+	(20): dataset_type = ST
+	(21): dataset_use_sm = False
+	(22): dataset_valid_batch_size = 32
+	(23): dataset_valid_roots = ['F:\\zcy\\research\\code\\pythonProject1\\ABINet-main\\data\\evaluation\\test_LMDB']
+	(24): global_debug = False
+	(25): global_name = seqclr-pretrain-vision-model
+	(26): global_phase = train
+	(27): global_seed = 42
+	(28): global_stage = pretrain-vision
+	(29): global_workdir = workdir\seqclr-pretrain-vision-model
+	(30): model_checkpoint = None
+	(31): model_contrastive_loss_weight = 1.0
+	(32): model_contrastive_supervised_flag = True
+	(33): model_instance_mapping_fixed = instances
+	(34): model_instance_mapping_frame_to_instance = False
+	(35): model_instance_mapping_w = 5
+	(36): model_name = semimtr.modules.model_seqclr_vision.SeqCLRModel
+	(37): model_proj_layer = backbone_feature
+	(38): model_proj_scheme = None
+	(39): model_strict = True
+	(40): model_vision_attention = position
+	(41): model_vision_backbone = transformer
+	(42): model_vision_backbone_ln = 3
+	(43): model_vision_loss_weight = 1.0
+	(44): optimizer_bn_wd = False
+	(45): optimizer_clip_grad = 20
+	(46): optimizer_lr = 0.0001
+	(47): optimizer_scheduler_gamma = 0.1
+	(48): optimizer_scheduler_periods = [17, 5, 3]
+	(49): optimizer_true_wd = False
+	(50): optimizer_type = Adam
+	(51): optimizer_wd = 0.0001
+	(52): training_epochs = 25
+	(53): training_eval_iters = 40
+	(54): training_hist_iters = 40
+	(55): training_save_iters = 40
+	(56): training_show_iters = 40
+	(57): training_start_iters = 0
+	(58): training_stats_iters = 40
+)
+Construct dataset.
+5131 training items found.
+1791 valid items found.
+Construct model.
+Construct learner.
+Start training.
+Corrupted image is found: 0.3_unlabel_train_images, 1324
+Corrupted image is found: 0.3_unlabel_train_images, 451
+Corrupted image is found: 0.3_unlabel_train_images, 919
+Corrupted image is found: 0.3_unlabel_train_images, 1206
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 13
+Corrupted image is found: 0.3_unlabel_train_images, 326
+Corrupted image is found: 0.3_unlabel_train_images, 1429
+Corrupted image is found: 0.3_unlabel_train_images, 865
+Corrupted image is found: 0.3_unlabel_train_images, 696
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 318
+Corrupted image is found: 0.3_unlabel_train_images, 440
+Corrupted image is found: 0.3_unlabel_train_images, 689
+Corrupted image is found: 0.3_unlabel_train_images, 209
+Corrupted image is found: 0.3_unlabel_train_images, 189
+Corrupted image is found: 0.3_unlabel_train_images, 778
+Corrupted image is found: 0.3_unlabel_train_images, 198
+Corrupted image is found: 0.3_unlabel_train_images, 735
+Corrupted image is found: 0.3_unlabel_train_images, 704
+Corrupted image is found: 0.3_unlabel_train_images, 1236
+Corrupted image is found: 0.3_unlabel_train_images, 541
+Corrupted image is found: 0.3_unlabel_train_images, 88
+Corrupted image is found: 0.3_unlabel_train_images, 1494
+Corrupted image is found: 0.3_unlabel_train_images, 940
+Corrupted image is found: 0.3_unlabel_train_images, 1098
+Corrupted image is found: 0.3_unlabel_train_images, 255
+Corrupted image is found: 0.3_unlabel_train_images, 775
+Corrupted image is found: 0.3_unlabel_train_images, 161
+Corrupted image is found: 0.3_unlabel_train_images, 1130
+Corrupted image is found: 0.3_unlabel_train_images, 600
+Corrupted image is found: 0.3_unlabel_train_images, 1287
+Corrupted image is found: 0.3_unlabel_train_images, 1266
+Corrupted image is found: 0.3_unlabel_train_images, 740
+Corrupted image is found: 0.3_unlabel_train_images, 1182
+Corrupted image is found: 0.3_unlabel_train_images, 393
+Corrupted image is found: 0.3_unlabel_train_images, 1442
+Corrupted image is found: 0.3_unlabel_train_images, 142
+Corrupted image is found: 0.3_unlabel_train_images, 93
+Corrupted image is found: 0.3_unlabel_train_images, 1354
+Corrupted image is found: 0.3_unlabel_train_images, 466
+Corrupted image is found: 0.3_unlabel_train_images, 592
+Corrupted image is found: 0.3_unlabel_train_images, 163
+Corrupted image is found: 0.3_unlabel_train_images, 476
+Corrupted image is found: 0.3_unlabel_train_images, 206
+Corrupted image is found: 0.3_unlabel_train_images, 778
+Corrupted image is found: 0.3_unlabel_train_images, 569
+Corrupted image is found: 0.3_unlabel_train_images, 928
+Corrupted image is found: 0.3_unlabel_train_images, 1301
+Corrupted image is found: 0.3_unlabel_train_images, 747
+Corrupted image is found: 0.3_unlabel_train_images, 333
+Corrupted image is found: 0.3_unlabel_train_images, 758
+Corrupted image is found: 0.3_unlabel_train_images, 727
+Corrupted image is found: 0.3_unlabel_train_images, 429
+Corrupted image is found: 0.3_unlabel_train_images, 1372
+Corrupted image is found: 0.3_unlabel_train_images, 546
+Corrupted image is found: 0.3_unlabel_train_images, 1437
+Corrupted image is found: 0.3_unlabel_train_images, 1399
+Corrupted image is found: 0.3_unlabel_train_images, 1327
+Corrupted image is found: 0.3_unlabel_train_images, 146
+Corrupted image is found: 0.3_unlabel_train_images, 1247
+Corrupted image is found: 0.3_unlabel_train_images, 1300
+Corrupted image is found: 0.3_unlabel_train_images, 350
+Corrupted image is found: 0.3_unlabel_train_images, 1093
+Corrupted image is found: 0.3_unlabel_train_images, 1493
+Corrupted image is found: 0.3_unlabel_train_images, 501
+Corrupted image is found: 0.3_unlabel_train_images, 334
+Corrupted image is found: 0.3_unlabel_train_images, 946
+Corrupted image is found: 0.3_unlabel_train_images, 777
+Corrupted image is found: 0.3_unlabel_train_images, 552
+Corrupted image is found: 0.3_unlabel_train_images, 1310
+Corrupted image is found: 0.3_unlabel_train_images, 1409
+Corrupted image is found: 0.3_unlabel_train_images, 1140
+Corrupted image is found: 0.3_unlabel_train_images, 449
+Corrupted image is found: 0.3_unlabel_train_images, 1402
+Corrupted image is found: 0.3_unlabel_train_images, 664
+Corrupted image is found: 0.3_unlabel_train_images, 114
+Corrupted image is found: 0.3_unlabel_train_images, 469
+Corrupted image is found: 0.3_unlabel_train_images, 65
+Corrupted image is found: 0.3_unlabel_train_images, 646
+Corrupted image is found: 0.3_unlabel_train_images, 821
+Corrupted image is found: 0.3_unlabel_train_images, 548
+Corrupted image is found: 0.3_unlabel_train_images, 135
+Corrupted image is found: 0.3_unlabel_train_images, 432
+Corrupted image is found: 0.3_unlabel_train_images, 1161
+Corrupted image is found: 0.3_unlabel_train_images, 1470
+Corrupted image is found: 0.3_unlabel_train_images, 644
+Corrupted image is found: 0.3_unlabel_train_images, 435
+Corrupted image is found: 0.3_unlabel_train_images, 1342
+Corrupted image is found: 0.3_unlabel_train_images, 1022
+Corrupted image is found: 0.3_unlabel_train_images, 810
+Corrupted image is found: 0.3_unlabel_train_images, 1316
+Corrupted image is found: 0.3_unlabel_train_images, 939
+Corrupted image is found: 0.3_unlabel_train_images, 292
+Corrupted image is found: 0.3_unlabel_train_images, 542
+Corrupted image is found: 0.3_unlabel_train_images, 285
+Corrupted image is found: 0.3_unlabel_train_images, 505
+Corrupted image is found: 0.3_unlabel_train_images, 1525
+Corrupted image is found: 0.3_unlabel_train_images, 1149
+Corrupted image is found: 0.3_unlabel_train_images, 1103
+Corrupted image is found: 0.3_unlabel_train_images, 538
+Corrupted image is found: 0.3_unlabel_train_images, 1529
+Corrupted image is found: 0.3_unlabel_train_images, 1197
+Corrupted image is found: 0.3_unlabel_train_images, 877
+Corrupted image is found: 0.3_unlabel_train_images, 1195
+Corrupted image is found: 0.3_unlabel_train_images, 817
+Corrupted image is found: 0.3_unlabel_train_images, 741
+Corrupted image is found: 0.3_unlabel_train_images, 449
+Corrupted image is found: 0.3_unlabel_train_images, 283
+Corrupted image is found: 0.3_unlabel_train_images, 1043
+Corrupted image is found: 0.3_unlabel_train_images, 1010
